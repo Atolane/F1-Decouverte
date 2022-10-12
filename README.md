@@ -1,3 +1,3 @@
-Découverte F1
+              /!\ Découverte F1 /!\
 
-https://atolane.github.io/F1-Decouverte
+---->   https://atolane.github.io/f1decouverte/ <----
