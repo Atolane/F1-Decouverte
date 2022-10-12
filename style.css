@@ -9,6 +9,7 @@ h1{
     font-style:bold;
     text-shadow: 1px 1px 2px red;
     text-align: center;
+    margin: 5%;
 
 }
 
@@ -17,15 +18,21 @@ h1 a {
     text-shadow: 1px 1px 2px black;
 }
 
+#body2{
+    background: black;
+}
+
 body{
-    background-image: url("fond.jpg");
-    background-size: 1350px;
+    background-image: url("./Images/fond.jpg");
+    background-size: 2000px;
 }
 
 #texte1{
     color: white;
     font-weight: bold;
-
+    margin: 5%;
+    text-align: center;
+    font-size: 25px;
 
 }
 
@@ -38,24 +45,6 @@ body{
     margin-right: auto;
 }
 
-.nav ul li{
-    float:left;
-    list-style:none;
-    text-align: center;
-}
-.nav ul li a{
-    line-height:40px;
-    display:block;
-    padding:0 10px;
-    text-align: center;
-}
-
-.nav.fixed{
-    position:fixed;
-    top:0;
-    z-index:1000;
-}
-
 #titre{
     text-align: center;
 }
@@ -66,28 +55,30 @@ body {
     font-family: "Trebuchet MS";
 }
 .menu {
-    display: flex;                /* Transformation en flexbox */
-    padding:0;                    /* Suppression des marges internes */
-    justify-content: space-around;/* Alignements des liens dans le menu */
+    display: flex;               
+    padding:0;                    
+    justify-content: space-around;
+    margin: 7%;
 }
+
 .menu li {
-    list-style-type: none ;       /* Suppression des puces */
+    list-style-type: none ;       
   
 }
 .menu a {
-    display:block;                /* Transformation en block */
-    min-width: 200px;             /* Largeur minimale des liens */   
+    display:block;                
+    min-width: 200px;                
     
-    margin: 0.1000rem;               /* Marges externes */
-    padding: 0.8rem 0;            /* Marges internes */
-    text-align: center;           /* Centrage du texte */   
-    background-color: black;    /* Arrière-plan */
-    color: white;                  /* Couleur du texte */
-    text-decoration: none;        /* Suppression du soulignement */
-    border: 1px solid #fff;       /* Ajout d'une bordure */
-    border-radius: 100px;           /* Arrondis des bordures */
+    margin: 0.1000rem;               
+    padding: 0.8rem 0;            
+    text-align: center;             
+    background-color: black; 
+    color: white;                
+    text-decoration: none;        
+    border: 1px solid #fff;       
+    border-radius: 100px;           
     
-    transition: all 1s ;          /* Ajout des effets de transition */
+    transition: all 1s ;          
 }
 
 .menu a:hover,
@@ -97,83 +88,42 @@ body {
     border-color: white;
 }
 
-@media (max-width: 640px) {
-	* {
-		box-sizing: border-box;
-	}
-	
-	/* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+.menu2 {
+    display: flex;               
+    padding:0;                    
+    justify-content: space-around;
+}
 
-	body {
-		width: auto;
-		margin: 0;
-		padding: 0;
-	}
-	
-	/* fixer une largeur maximale de 100% aux éléments potentiellement problématiques */
+.menu2 li {
+    list-style-type: none ;       
+  
+}
+.menu2 a {
+    display:block;                
+    min-width: 200px;                
+    
+    margin: 0.1000rem;               
+    padding: 0.8rem 0;            
+    text-align: center;             
+    background-color: black; 
+    color: white;                
+    text-decoration: none;        
+    border: 1px solid #fff;       
+    border-radius: 100px;           
+    
+    transition: all 1s ;          
+}
 
-	img,
-	table,
-	td,
-	blockquote,
-	code,
-	pre,
-	textarea,
-	input,
-	iframe,
-	object,
-	embed,
-	video {
-		max-width: 100%;
-	}
-	
-	/* conserver le ratio des images */
+.menu2 a:hover,
+.menu2 a:hover.actif{
+    background-color: red;
+    color: wheat;
+    border-color: white;
+}
 
-	img {
-		height: auto;
-	}
-	
-	/* gestion des mots longs */
 
-	textarea,
-	table,
-	td,
-	th,
-	code,
-	pre,
-	samp {
-		-webkit-hyphens: auto; /* césure propre */
-		-moz-hyphens: auto;
-		hyphens: auto;
-		word-wrap: break-word; /* passage à la ligne forcé */
-	}
-	
-	code,
-	pre,
-	samp {
-		white-space: pre-wrap; /* passage à la ligne spécifique pour les éléments à châsse fixe */
-	}
-	
-	/* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
-
-	.element1,
-	.element2 {
-		float: none;
-		width: auto;
-	}
-	
-	/* masquer/afficher les éléments  */
-
-	.u-mobile {          display: block;          display: revert !important; /* affichage des éléments */        }        .u-no-mobile {          display: none !important; /* masquage des éléments */        }
-	
-	/* Un message personnalisé */
-
-	body:before {
-		content: "Version mobile du site";
-		display: block;
-		text-align: center;
-		font-style: italic;
-		color: 
-#777;
-	}
+#f2004, #rb9, #r25{
+    border-radius: 30px;
+    width: 700px;
+    margin: 5%;
 }
