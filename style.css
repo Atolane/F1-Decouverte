@@ -1,0 +1,98 @@
+html, body{
+    min-height:100%;
+    max-width:100%;
+}
+
+h1{
+    color: red;
+    font-style:italic;
+    font-style:bold;
+    text-shadow: 1px 1px 2px red;
+    text-align: center;
+
+}
+
+h1 a {
+    color: red;
+    text-shadow: 1px 1px 2px black;
+}
+
+body{
+    background-image: url("fond.jpg");
+    background-size: 1350px;
+}
+
+#texte1{
+    color: white;
+    font-weight: bold;
+
+
+}
+
+#image{
+    border-radius: 30px;
+    border: 5px solid black;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav ul li{
+    float:left;
+    list-style:none;
+    text-align: center;
+}
+.nav ul li a{
+    line-height:40px;
+    display:block;
+    padding:0 10px;
+    text-align: center;
+}
+
+.nav.fixed{
+    position:fixed;
+    top:0;
+    z-index:1000;
+}
+
+#titre{
+    text-align: center;
+}
+
+
+
+body {
+    font-family: "Trebuchet MS";
+}
+.menu {
+    display: flex;                /* Transformation en flexbox */
+    padding:0;                    /* Suppression des marges internes */
+    justify-content: space-around;/* Alignements des liens dans le menu */
+}
+.menu li {
+    list-style-type: none ;       /* Suppression des puces */
+  
+}
+.menu a {
+    display:block;                /* Transformation en block */
+    min-width: 200px;             /* Largeur minimale des liens */   
+    
+    margin: 0.1000rem;               /* Marges externes */
+    padding: 0.8rem 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color: black;    /* Arrière-plan */
+    color: white;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 100px;           /* Arrondis des bordures */
+    
+    transition: all 1s ;          /* Ajout des effets de transition */
+}
+
+.menu a:hover,
+.menu a:hover.actif{
+    background-color: red;
+    color: wheat;
+    border-color: white;
+}
